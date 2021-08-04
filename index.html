@@ -1,13 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Unrolled</title>
-    <link rel="apple-touch-icon" sizes="129x129" href="apple-touch-icon.png">
+    <title>@unrolled</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
     <style>
         img,
@@ -220,7 +217,7 @@
 
         .hidden,
         [hidden] {
-            display: none!important
+            display: none !important
         }
 
         .pure-img {
@@ -235,41 +232,91 @@
             font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
         }
 
+        .wrapper {
+            border-top: #C68346 5px solid;
+        }
+
         .container {
             max-width: 400px;
             margin: 40px auto;
             text-align: center;
         }
 
-        a,
-        a:visited {
-            text-decoration: none;
-            color: #456BB3;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        hr,
-        p {
+        .logo {
             margin: 20px 0;
         }
 
+        .logo img {
+            width: 128px;
+            height: 128px;
+        }
+
+        .contact {
+            font-style: italic;
+        }
+
+        .social {
+            float: left;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .social:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .social a:hover {
+            text-decoration: none;
+        }
+
+        .social a i {
+            font-size: 1.4rem;
+            color: #000;
+            transition: color .2s;
+        }
+
+        .social a:hover i {
+            color: #644939;
+        }
+
+        .spacer {
+            padding: 0px 10px;
+        }
+
+        a {
+            text-decoration: none;
+            transition: color .2s;
+            color: #C68346;
+        }
+
+        a:hover {
+            color: #644939;
+        }
     </style>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <img src="logo.png" alt="Unrolled Logo" style="width: 128px; height: 128px;">
-        </header>
-        <section id="information">
-            <p>
-                <em><a href="mailto:hello@unrolled.ca">hello@unrolled.ca</a></em>
-            </p>
-        </section>
-        <hr />
+    <div class="wrapper">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="contact">
+                <a href="mailto:hello@unrolled.ca">hello@unrolled.ca</a>
+            </div>
+            <div class="social">
+                <a href="https://github.com/unrolled/">
+                    <i class="lni lni-github-original"></i>
+                </a>
+                <span class="spacer"></span>
+                <a href="https://www.linkedin.com/in/unrolled/">
+                    <i class="lni lni-linkedin-original"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 
